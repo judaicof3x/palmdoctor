@@ -18,7 +18,7 @@ class CardSeeder extends Seeder
             'holder' => 'Joao V S Vieira',
             'number' => '4111 1111 1111 1111',
             'expiry_month' => '01',
-            'expiry_year' => '25',
+            'expiry_year' => '2025',
             'cvv' => '123',
             'user_id' => 1
         ]);
@@ -28,7 +28,7 @@ class CardSeeder extends Seeder
             'holder' => 'Joao V S Vieira',
             'number' => '5353 2766 5962 9461',
             'expiry_month' => '02',
-            'expiry_year' => '25',
+            'expiry_year' => '2025',
             'cvv' => '123',
             'user_id' => 1
         ]);

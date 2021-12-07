@@ -16,13 +16,17 @@ class PlanSeeder extends Seeder
     {
         Plan::create([
             'name' => 'Individual',
-            'description' => 'Plano individual para não parceiros',
+            'description' => 'Para uma pessoa',
+            'entry' => 216,
+            'dependent' => 1,
             'amount' => 36,
         ]);
 
         Plan::create([
             'name' => 'Família',
-            'description' => 'Plano família para não parceiros',
+            'description' => 'Até 5 pessoas',
+            'entry' => 455.4,
+            'dependent' => 5,
             'amount' => 75.90,
         ]);
     }

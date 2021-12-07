@@ -765,6 +765,39 @@ select {
 [type='file']:focus {
 	outline: 1px auto -webkit-focus-ring-color;
 }
+.container {
+	width: 100%;
+}
+@media (min-width: 640px) {
+
+	.container {
+		max-width: 640px;
+	}
+}
+@media (min-width: 768px) {
+
+	.container {
+		max-width: 768px;
+	}
+}
+@media (min-width: 1024px) {
+
+	.container {
+		max-width: 1024px;
+	}
+}
+@media (min-width: 1280px) {
+
+	.container {
+		max-width: 1280px;
+	}
+}
+@media (min-width: 1536px) {
+
+	.container {
+		max-width: 1536px;
+	}
+}
 .prose {
 	color: #374151;
 	max-width: 65ch;
@@ -1119,6 +1152,10 @@ select {
 	margin-top: 1.25rem;
 	margin-bottom: 1.25rem;
 }
+.my-auto {
+	margin-top: auto;
+	margin-bottom: auto;
+}
 .my-6 {
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
@@ -1221,6 +1258,18 @@ select {
 .mb-8 {
 	margin-bottom: 2rem;
 }
+.mb-2 {
+	margin-bottom: 0.5rem;
+}
+.mb-3 {
+	margin-bottom: 0.75rem;
+}
+.mb-9 {
+	margin-bottom: 2.25rem;
+}
+.mb-10 {
+	margin-bottom: 2.5rem;
+}
 .block {
 	display: block;
 }
@@ -1229,6 +1278,9 @@ select {
 }
 .inline-flex {
 	display: inline-flex;
+}
+.table {
+	display: table;
 }
 .grid {
 	display: grid;
@@ -1480,6 +1532,9 @@ select {
 .border-2 {
 	border-width: 2px;
 }
+.border-0 {
+	border-width: 0px;
+}
 .border-b-2 {
 	border-bottom-width: 2px;
 }
@@ -1494,6 +1549,9 @@ select {
 }
 .border-r {
 	border-right-width: 1px;
+}
+.border-dashed {
+	border-style: dashed;
 }
 .border-gray-300 {
 	--tw-border-opacity: 1;
@@ -1594,6 +1652,12 @@ select {
 .p-3 {
 	padding: 0.75rem;
 }
+.p-9 {
+	padding: 2.25rem;
+}
+.p-7 {
+	padding: 1.75rem;
+}
 .px-4 {
 	padding-left: 1rem;
 	padding-right: 1rem;
@@ -1662,6 +1726,10 @@ select {
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
 }
+.px-9 {
+	padding-left: 2.25rem;
+	padding-right: 2.25rem;
+}
 .pt-6 {
 	padding-top: 1.5rem;
 }
@@ -1706,6 +1774,12 @@ select {
 }
 .pb-10 {
 	padding-bottom: 2.5rem;
+}
+.pt-0 {
+	padding-top: 0px;
+}
+.pt-3 {
+	padding-top: 0.75rem;
 }
 .text-left {
 	text-align: left;

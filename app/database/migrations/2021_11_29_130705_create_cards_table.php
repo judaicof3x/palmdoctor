@@ -16,7 +16,7 @@ class CreateCardsTable extends Migration
         Schema::create('cards', function (Blueprint $table) {
             $table->id();
             $table->boolean('default')->default(1);
-            $table->string('holder');
+            $table->string('holder'); // Nome do titular do cartão
             $table->string('number');
             $table->string('expiry_month');
             $table->string('expiry_year');

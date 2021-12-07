@@ -27,14 +27,14 @@
 </head>
 <!--end::Head-->
 <!--begin::Body-->
-<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled aside-fixed aside-default-enabled">
+<body id="kt_body" @yield('body-attr') class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled aside-fixed aside-default-enabled">
 
 <!--begin::Root-->
 <div class="d-flex flex-column flex-root">
     <!--begin::Page-->
     <div class="page d-flex flex-row flex-column-fluid">
-        <!--begin::Aside-->
-    @include('templates.painel-aside')
+    <!--begin::Aside-->
+        @include('templates.painel-aside')
     <!--end::Aside-->
 
 

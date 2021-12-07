@@ -13,9 +13,15 @@ class Plan extends Model
         'name',
         'url',
         'description',
+        'entry',
         'amount',
         'frequency',
         'interval',
         'is_active'
     ];
+
+    public function order()
+    {
+        $this->hasMany(Order::class);
+    }
 }

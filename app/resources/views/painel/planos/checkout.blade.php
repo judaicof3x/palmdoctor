@@ -36,27 +36,10 @@
                     <!--begin::Card body-->
                     <div class="card-body">
 
-                        <h5 class="my-5">Confira os seus dados e selecione o método de pagamento para ativar o seu plano:</h5>
+                        <h5 class="my-5 text-gray-800">Selecione uma forma de pagamento:</h5>
 
                         <form action="{{ route('painel.planos.capture', $plan->url) }}" method="post">
                             @csrf
-
-                            <div class="form-group">
-                                <label for="full_name">Nome completo:</label>
-                                <input type="text" class="form-control form-control-solid" name="full_name" value="{{ Auth::user()->name }}" disabled>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-5">
-                                    <label for="email">Email:</label>
-                                    <input type="text" class="form-control form-control-solid" name="email" value="admin@email.com">
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <label for="whatsapp">Número do WhatsApp:</label>
-                                    <input type="text" class="form-control form-control-solid" name="whatsapp" value="(21) 979-690-623">
-                                </div>
-                            </div>
 
                             <div class="mb-5"></div>
 
@@ -154,8 +137,8 @@
                                     <!--end::Text-->
                                 </div>
                                 <p class="mb-6 mb-lg-4"><b>Plano {{ $plan->name }}:</b> {{ $plan->description }}</p>
-                                <p class="mb-0">Subtotal: <span style="float: right;">R$ {{ number_format($plan->amount, 2, ',', '.') }}</span></p>
-                                <p class=""><b>Total à vista: <span class="h2" style="float: right;">R$ {{ number_format($plan->amount, 2, ',', '.') }}</span></b></p>
+                                <p class="mb-0">Subtotal: <span style="float: right;">R$ {{ number_format($plan->entry, 2, ',', '.') }}</span></p>
+                                <p class=""><b>Total à vista: <span class="h2" style="float: right;">R$ {{ number_format($plan->entry, 2, ',', '.') }}</span></b></p>
                                 <hr>
                                 <div class="text-gray-600 fw-bold mb-8 mb-lg-0 text-center">
                                     <img src="{{ URL::asset('media/svg/card-logos/visa.svg') }}" alt="" class="h-30px">

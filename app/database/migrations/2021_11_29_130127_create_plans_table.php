@@ -15,13 +15,15 @@ class CreatePlansTable extends Migration
     {
         Schema::create('plans', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->unique();
-            $table->string('url')->unique();
-            $table->string('description')->nullable();
-            $table->double('amount', 10, 2);
-            $table->integer('frequency')->default(1);
-            $table->string('interval')->default('month');
-            $table->boolean('is_active')->default(1);
+            $table->string('name')->unique(); // Nome do plano
+            $table->string('url')->unique(); // URL do plano (gerada automaticamente pelo Observer)
+            $table->string('description')->nullable(); // Descrição curta do plano
+            $table->integer('dependent')->nullable(); // Quantidade de pessoas
+            $table->double('entry', 10, 2); // Valor da adesão do plano
+            $table->double('amount', 10, 2); // Valor da mensalidade do plano
+            $table->integer('frequency')->default(1); // Frequencia de cobrança
+            $table->string('interval')->default('month'); // Intervalo da cobrança
+            $table->boolean('is_active')->default(1); // Se o plano está ativo para vendas
             $table->timestamps();
         });
     }
